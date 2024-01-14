@@ -36,5 +36,5 @@ class Cal{
 };
 
 int main(){
-    Cal p1(10,20,'+'),p2(20,10,'-'); 
+    return;
 }
