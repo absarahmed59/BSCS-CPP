@@ -6,11 +6,7 @@ class Cal{
         int a,b,ans;
         char op;
     public:
-        Cal(int x, int y, char c){
-            a = x;
-            b = y;
-            op = c;
-        }
+        Cal(int x, int y, char c) : a(x), b(y), op(c) {};
         void set_ans(){
             switch(op){
                 case '+':

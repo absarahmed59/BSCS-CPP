@@ -36,5 +36,5 @@ class Cal{
 };
 
 int main(){
-    return;
+    return 0;
 }
