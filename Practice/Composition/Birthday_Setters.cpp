@@ -5,12 +5,12 @@ class Birthday{
     private:
         int day, month, year;
     public:
-        Birthday(int d, int m, int y) {
+        void set_DOB(int d, int m, int y) {
             day = d;
             month = m;
             year = y;
         }
-        void DOB(){
+        void show_DOB(){
             cout<<"Dob is: "<<day<<"/"<<month<<"/"<<year;
         }
 };
@@ -20,19 +20,21 @@ class Person{
         Birthday birth;
         string name;
     public:
-        Person(string n, Birthday b){
+        void set_info(string n, Birthday b) {
             birth = b;
             name = n;
         }
         void show_info(){
             cout<<"Name is: "<<name<<endl;
-            birth.DOB();
+            birth.show_DOB();
         }
 };
 
 int main(){
-    Birthday b(11,2,2004);
-    Person p("Absar Ahmed", b);
+    Birthday b;
+    b.set_DOB(11,2,2004);
+    Person p;
+    p.set_info("Absar Ahmed", b);
     p.show_info();
     
     return 0;

@@ -26,6 +26,6 @@ class Person{
 int main(){
     Birthday b(11,2,2004);
     Person p("Absar Ahmed", b);
-    p.get_info();
+    p.show_info();
     return 0;
 }
