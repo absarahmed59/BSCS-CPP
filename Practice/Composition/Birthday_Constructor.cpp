@@ -20,8 +20,7 @@ class Person{
         Birthday birth;
         string name;
     public:
-        Person(string n, Birthday b){
-            birth = b;
+        Person(string n, Birthday b) : birth(b) {
             name = n;
         }
         void show_info(){
@@ -34,6 +33,5 @@ int main(){
     Birthday b(11,2,2004);
     Person p("Absar Ahmed", b);
     p.show_info();
-    
     return 0;
 }
